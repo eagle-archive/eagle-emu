@@ -1,0 +1,4 @@
+
+@/eagle-emu/projs/common/common_options.txt
+
+-include forceinc.h

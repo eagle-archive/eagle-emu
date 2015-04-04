@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dalvik_dalvikvm" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler__eagleemu" />
+		<Build>
+			<Target title="Debug">
+				<Option output="$(OUTBIN)dalvikvm" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(OUTBIN)" />
+				<Option object_output="$(OUTOBJ)dalvikvm" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_compiler__eagleemu" />
+				<Option use_console_runner="0" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="@options.txt" />
+			<Add directory="$(EMU_DIR)projs\common\include\MingW" />
+			<Add directory="$(TOP_DIR)dalvik\libnativehelper\include\nativehelper" />
+			<Add directory="$(TOP_DIR)dalvik\include" />
+			<Add directory="$(TOP_DIR)frameworks\base\include" />
+			<Add directory="$(TOP_DIR)system\core\include" />
+		</Compiler>
+		<Linker>
+			<Add library="libdvm.dll.a" />
+			<Add directory="$(OUTBIN)" />
+			<Add directory="$(PREBUILT)" />
+		</Linker>
+		<Unit filename="..\..\..\..\dalvik\dalvikvm\Android.mk" />
+		<Unit filename="..\..\..\..\dalvik\dalvikvm\Main.cpp" />
+		<Unit filename="forceinc.h" />
+		<Unit filename="options.txt" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

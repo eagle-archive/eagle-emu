@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="dalvik">
+		<Project filename="dalvik/libjavacore/libjavacore.cbp" />
+		<Project filename="dalvik/libnativehelper/libnativehelper.cbp">
+			<Depends filename="dalvik/libjavacore/libjavacore.cbp" />
+		</Project>
+		<Project filename="dalvik/libdex/libdex.cbp" />
+		<Project filename="dalvik/libdvm/libdvm.cbp">
+			<Depends filename="dalvik/libdex/libdex.cbp" />
+		</Project>
+		<Project filename="dalvik/dalvikvm/dalvikvm.cbp">
+			<Depends filename="dalvik/libdvm/libdvm.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="external_libcrypto" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler__eagleemu" />
+		<Build>
+			<Target title="Debug">
+				<Option output="$(OUTBIN)libcrypto.dll" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$(OUTBIN)" />
+				<Option object_output="$(OUTOBJ)libcrypto" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler__eagleemu" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="@libcrypto_options.txt" />
+			<Add directory="$(TOP_DIR)external\openssl" />
+			<Add directory="$(TOP_DIR)external\openssl\crypto" />
+			<Add directory="$(TOP_DIR)external\openssl\crypto\asn1" />
+			<Add directory="$(TOP_DIR)external\openssl\crypto\evp" />
+			<Add directory="$(TOP_DIR)external\openssl\include" />
+			<Add directory="$(TOP_DIR)external\openssl\include\openssl" />
+			<Add directory="$(TOP_DIR)external\zlib" />
+		</Compiler>
+		<Unit filename="libcrypto_forceinc.h" />
+		<Unit filename="libcrypto_options.txt" />
+		<Unit filename="..\..\overlay\external\openssl\crypto\dso\dso_win32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\overlay\external\openssl\crypto\o_dir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\Android.mk" />
+		<Unit filename="..\..\..\..\external\openssl\crypto\aes\aes_cbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\aes\aes_cfb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\aes\aes_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\aes\aes_ctr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\aes\aes_ecb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\aes\aes_misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\aes\aes_ofb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\aes\aes_wrap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_bitstr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_bool.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_bytes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_d2i_fp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_digest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_dup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_enum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_gentm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_i2d_fp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_mbstr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_object.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_octet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_print.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_strex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_strnid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_type.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_utctm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_utf8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\a_verify.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\asn1_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\asn1_gen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\asn1_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\asn1_par.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\asn_mime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\asn_moid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\asn_pack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\d2i_pr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\d2i_pu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\evp_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\f_enum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\f_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\f_string.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\i2d_pr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\i2d_pu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\n_pkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\nsseq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\p5_pbe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\p5_pbev2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\p8_pkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\t_bitst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\t_crl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\t_pkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\t_req.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\t_spki.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\t_x509.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\t_x509a.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\tasn_dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\tasn_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\tasn_fre.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\tasn_new.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\tasn_typ.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\tasn_utl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_algor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_attrib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_bignum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_crl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_exten.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_long.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_name.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_pkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_pubkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_req.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_sig.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_spki.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_val.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_x509.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\asn1\x_x509a.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\b_dump.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\b_print.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\b_sock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bf_buff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bf_nbio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bf_null.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bio_cb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bio_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bio_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_acpt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_bio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_conn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_dgram.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_fd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_null.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bio\bss_sock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_asm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_blind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_ctx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_div.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_exp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_exp2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_gcd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_gf2m.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_kron.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_mod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_mont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_mpi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_mul.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_nist.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_prime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_print.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_rand.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_recp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_shift.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_sqr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_sqrt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\bn\bn_word.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\buffer\buf_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\buffer\buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\comp\c_rle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\comp\c_zlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\comp\comp_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\comp\comp_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\conf\conf_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\conf\conf_def.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\conf\conf_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\conf\conf_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\conf\conf_mall.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\conf\conf_mod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\conf\conf_sap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\cpt_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\cryptlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\cversion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\cbc_cksm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\cbc_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\cfb64ede.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\cfb64enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\cfb_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\des_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\des_old.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\des_old2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\ecb3_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\ecb_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\ede_cbcm_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\enc_read.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\enc_writ.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\fcrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\fcrypt_b.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\ofb64ede.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\ofb64enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\ofb_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\pcbc_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\qud_cksm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\rand_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\read2pwd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\rpc_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\set_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\str2key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\des\xcbc_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dh\dh_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dh\dh_check.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dh\dh_depr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dh\dh_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dh\dh_gen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dh\dh_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dh\dh_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dsa\dsa_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dsa\dsa_depr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dsa\dsa_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dsa\dsa_gen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dsa\dsa_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dsa\dsa_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dsa\dsa_ossl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dsa\dsa_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dsa\dsa_vrf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dso\dso_dl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dso\dso_dlfcn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dso\dso_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dso\dso_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dso\dso_null.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\dso\dso_openssl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ebcdic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\err\err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\err\err_all.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\err\err_prn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\bio_b64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\bio_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\bio_md.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\bio_ok.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\c_all.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\c_allc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\c_alld.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\digest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\e_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\e_des.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\e_des3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\e_null.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\e_old.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\e_rc2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\e_rc4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\e_rc5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\e_xcbc_d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\encode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\evp_acnf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\evp_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\evp_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\evp_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\evp_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\evp_pbe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\evp_pkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\m_dss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\m_dss1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\m_md4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\m_md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\m_mdc2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\m_null.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\m_ripemd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\m_sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\names.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\p5_crpt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\p5_crpt2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\p_dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\p_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\p_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\p_open.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\p_seal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\p_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\evp\p_verify.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ex_data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\hmac\hmac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\krb5\krb5_asn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\lhash\lh_stats.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\lhash\lhash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\md4\md4_dgst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\md4\md4_one.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\md5\md5_dgst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\md5\md5_one.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\mem_clr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\mem_dbg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\o_dir.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\o_str.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\o_time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\objects\o_names.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\objects\obj_dat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\objects\obj_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\objects\obj_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ocsp\ocsp_asn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ocsp\ocsp_cl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ocsp\ocsp_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ocsp\ocsp_ext.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ocsp\ocsp_ht.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ocsp\ocsp_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ocsp\ocsp_prn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ocsp\ocsp_srv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ocsp\ocsp_vfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_all.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_oth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_pk8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_pkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_seal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_x509.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pem\pem_xaux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_asn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_attr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_crpt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_crt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_decr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_kiss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_mutl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_npas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_p8d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_p8e.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\p12_utl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs12\pk12err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs7\pk7_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs7\pk7_attr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs7\pk7_doit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs7\pk7_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs7\pk7_mime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs7\pk7_smime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\pkcs7\pkcs7err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rand\md_rand.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rand\rand_egd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rand\rand_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rand\rand_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rand\rand_unix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rand\randfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rc2\rc2_cbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rc2\rc2_ecb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rc2\rc2_skey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rc2\rc2cfb64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rc2\rc2ofb64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rc4\rc4_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rc4\rc4_skey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ripemd\rmd_dgst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ripemd\rmd_one.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_chk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_eay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_gen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_none.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_null.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_oaep.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_pk1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_pss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_saos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_ssl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\rsa\rsa_x931.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\sha\sha1_one.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\sha\sha1dgst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\sha\sha256.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\sha\sha512.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\sha\sha_dgst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\stack\stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\txt_db\txt_db.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ui\ui_compat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ui\ui_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ui\ui_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ui\ui_openssl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\ui\ui_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\uid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\by_dir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\by_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_att.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_cmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_d2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_def.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_ext.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_lu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_obj.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_r2x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_req.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_trs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_txt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_v3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_vfy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509_vpm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509cset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509name.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509rset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509spki.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x509type.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509\x_all.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\pcy_cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\pcy_data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\pcy_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\pcy_map.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\pcy_node.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\pcy_tree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_akey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_akeya.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_alt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_bcons.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_bitst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_conf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_cpols.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_crld.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_enum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_extku.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_genn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_ia5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_ncons.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_ocsp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_pci.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_pcia.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_pcons.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_pku.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_pmaps.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_prn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_purp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_skey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_sxnet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3_utl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\openssl\crypto\x509v3\v3err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

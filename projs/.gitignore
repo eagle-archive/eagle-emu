@@ -1,0 +1,4 @@
+# for code blocks
+*.layout
+*.depend
+*.cbTemp

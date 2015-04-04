@@ -1,0 +1,6 @@
+
+-fvisibility=hidden
+-fvisibility-inlines-hidden
+-fpermissive
+
+-include forceinc.h

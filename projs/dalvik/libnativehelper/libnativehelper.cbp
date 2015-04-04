@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dalvik_libnativehelper" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler__eagleemu" />
+		<Build>
+			<Target title="Debug">
+				<Option output="$(OUTBIN)libnativehelper" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$(OUTBIN)" />
+				<Option object_output="$(OUTOBJ)libnativehelper" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler__eagleemu" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="@options.txt" />
+			<Add directory="$(TOP_DIR)libcore\include" />
+		</Compiler>
+		<Linker>
+			<Add library="$(OUTBIN)\libjavacore.a" />
+			<Add library="$(OUTBIN)\libfdlibm.a" />
+			<Add library="$(PREBUILT)\libcrypto.dll.a" />
+			<Add library="$(PREBUILT)\libicui18n.dll.a" />
+			<Add library="$(PREBUILT)\libicuuc.dll.a" />
+			<Add library="$(PREBUILT)\libssl.dll.a" />
+			<Add library="$(PREBUILT)\libcutils.dll.a" />
+			<Add library="$(PREBUILT)\libexpat.dll.a" />
+			<Add library="$(PREBUILT)\liblog.dll.a" />
+			<Add library="$(PREBUILT)\libstlport.dll.a" />
+			<Add library="$(PREBUILT)\libz.dll.a" />
+			<Add directory="$(OUTBIN)\" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="cp -f $(OUTBIN)libnativehelper.dll.a $(PREBUILT)" />
+		</ExtraCommands>
+		<Unit filename="..\..\..\..\dalvik\libnativehelper\Android.mk">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="..\..\..\..\dalvik\libnativehelper\JNIHelp.cpp" />
+		<Unit filename="..\..\..\..\dalvik\libnativehelper\README" />
+		<Unit filename="..\..\..\..\dalvik\libnativehelper\Register.cpp" />
+		<Unit filename="forceinc.h" />
+		<Unit filename="options.txt" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

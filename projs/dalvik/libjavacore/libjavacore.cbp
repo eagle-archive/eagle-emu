@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dalvik_libjavacore" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler__eagleemu" />
+		<Build>
+			<Target title="Debug">
+				<Option output="$(OUTBIN)libjavacore.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="$(OUTOBJ)libjavacore" />
+				<Option type="2" />
+				<Option compiler="gnu_gcc_compiler__eagleemu" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="@options.txt" />
+			<Add directory="$(TOP_DIR)libcore\luni\src\main\native" />
+			<Add directory="$(TOP_DIR)external\expat\lib" />
+			<Add directory="$(TOP_DIR)external\icu4c\common" />
+			<Add directory="$(TOP_DIR)external\icu4c\i18n" />
+			<Add directory="$(TOP_DIR)external\openssl\include" />
+			<Add directory="$(TOP_DIR)dalvik\include" />
+			<Add directory="$(TOP_DIR)libcore\include" />
+			<Add directory="$(TOP_DIR)external\zlib" />
+		</Compiler>
+		<Linker>
+			<Add directory="$(OUTBIN)" />
+			<Add directory="$(PREBUILT)" />
+		</Linker>
+		<Unit filename="..\..\..\..\libcore\Android.mk" />
+		<Unit filename="..\..\..\..\libcore\NativeCode.mk" />
+		<Unit filename="..\..\..\..\libcore\dalvik\src\main\native\org_apache_harmony_dalvik_NativeTestTarget.cpp" />
+		<Unit filename="..\..\..\..\libcore\dalvik\src\main\native\sub.mk" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\AsynchronousSocketCloseMonitor.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\JniConstants.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\JniException.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\NetworkUtilities.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\Register.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\cbigint.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_io_Console.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_io_File.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_io_ObjectStreamClass.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_lang_Character.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_lang_Math.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_lang_ProcessManager.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_lang_RealToString.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_lang_StrictMath.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_lang_StringToReal.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_lang_System.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_math_NativeBN.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_nio_ByteOrder.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_nio_charset_Charsets.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_text_Bidi.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_util_regex_Matcher.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_util_regex_Pattern.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_util_zip_Adler32.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_util_zip_CRC32.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_util_zip_Deflater.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\java_util_zip_Inflater.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_icu_ICU.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_icu_NativeBreakIterator.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_icu_NativeCollation.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_icu_NativeConverter.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_icu_NativeDecimalFormat.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_icu_NativeIDN.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_icu_NativeNormalizer.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_icu_NativePluralRules.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_icu_TimeZones.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_io_AsynchronousCloseMonitor.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_io_Memory.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_io_OsConstants.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_io_Posix.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\libcore_net_RawSocket.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\org_apache_harmony_xml_ExpatParser.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\readlink.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\realpath.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\sub.mk" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\toStringArray.cpp" />
+		<Unit filename="..\..\..\..\libcore\luni\src\main\native\valueOf.cpp" />
+		<Unit filename="..\..\overlay\libcore\luni\src\main\native\org_apache_harmony_xnet_provider_jsse_NativeCrypto.cpp" />
+		<Unit filename="forceinc.h" />
+		<Unit filename="options.txt" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
