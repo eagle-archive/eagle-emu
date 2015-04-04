@@ -16,7 +16,6 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="@options.txt" />
 			<Add directory="$(EMU_DIR)projs\common\include\MingW" />
 			<Add directory="$(TOP_DIR)dalvik\libnativehelper\include\nativehelper" />
 			<Add directory="$(TOP_DIR)dalvik\include" />
@@ -24,14 +23,12 @@
 			<Add directory="$(TOP_DIR)system\core\include" />
 		</Compiler>
 		<Linker>
-			<Add library="libdvm.dll.a" />
+			<Add library="libdvm.a" />
 			<Add directory="$(OUTBIN)" />
 			<Add directory="$(PREBUILT)" />
 		</Linker>
-		<Unit filename="..\..\..\..\dalvik\dalvikvm\Android.mk" />
-		<Unit filename="..\..\..\..\dalvik\dalvikvm\Main.cpp" />
-		<Unit filename="forceinc.h" />
-		<Unit filename="options.txt" />
+		<Unit filename="dalvik_dalvikvm_options.txt" />
+		<Unit filename="dalvikvm_forceinc.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

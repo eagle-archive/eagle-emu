@@ -1,0 +1,9 @@
+
+@\win_emu\projs\common\common_options.txt
+
+-include libssl_forceinc.h
+
+-I\win_emu\projs\..\..\
+-I\external\openssl
+-I\external\openssl\include
+-I\external\openssl\crypto

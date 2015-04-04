@@ -1,0 +1,7 @@
+
+-fno-strict-aliasing
+-fvisibility=hidden
+-fvisibility-inlines-hidden
+-fpermissive
+
+-include libjavacore_forceinc.h

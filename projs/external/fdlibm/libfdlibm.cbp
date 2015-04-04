@@ -7,7 +7,7 @@
 		<Option compiler="gnu_gcc_compiler__eagleemu" />
 		<Build>
 			<Target title="Debug">
-				<Option output="$(OUTBIN)libfdlibm.a" prefix_auto="0" extension_auto="0" />
+				<Option output="$(OUTBIN)libfdlibm" prefix_auto="0" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="$(OUTOBJ)libfdlibm" />
 				<Option type="2" />
@@ -15,9 +15,8 @@
 				<Option createDefFile="1" />
 			</Target>
 		</Build>
-		<Compiler>
-			<Add option="@libfdlibm_options.txt" />
-		</Compiler>
+		<Unit filename="libfdlibm_forceinc.h" />
+		<Unit filename="proj_options.txt" />
 		<Unit filename="..\..\..\..\external\fdlibm\Android.mk" />
 		<Unit filename="..\..\..\..\external\fdlibm\e_acos.c">
 			<Option compilerVar="CC" />
@@ -261,8 +260,6 @@
 		<Unit filename="..\..\..\..\external\fdlibm\w_sqrt.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="libfdlibm_forceinc.h" />
-		<Unit filename="libfdlibm_options.txt" />
 		<Extensions>
 			<code_completion />
 			<debugger />

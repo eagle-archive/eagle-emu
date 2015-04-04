@@ -2,6 +2,11 @@
 <CodeBlocks_workspace_file>
 	<Workspace title="external-1">
 		<Project filename="external/fdlibm/libfdlibm.cbp" />
+		<Project filename="external/stlport/libstlport.cbp" />
 		<Project filename="external/openssl/libcrypto.cbp" active="1" />
+		<Project filename="external/zlib/gzip.cbp">
+			<Depends filename="external/zlib/libz.cbp" />
+		</Project>
+		<Project filename="external/zlib/libz.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

@@ -1,0 +1,3 @@
+
+-fuse-cxa-atexit
+-include libstlport_forceinc.h

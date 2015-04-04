@@ -1,0 +1,5 @@
+
+-fno-strict-aliasing
+-ffloat-store
+
+-include libfdlibm_forceinc.h

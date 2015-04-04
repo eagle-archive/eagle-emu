@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="external_zlib_gzip" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="$(OUTBIN)gzip" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(OUTBIN)" />
+				<Option object_output="$(OUTOBJ)gzip" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_compiler__eagleemu" />
+				<Option use_console_runner="0" />
+				<Linker>
+					<Add directory="$(OUTBIN)\" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="$(TOP_DIR)external\zlib" />
+		</Compiler>
+		<Linker>
+			<Add library="libz.a" />
+		</Linker>
+		<Unit filename="external_zlib_gzip_options.txt" />
+		<Unit filename="gzip_forceinc.h" />
+		<Unit filename="..\..\..\..\external\zlib\test\minigzip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

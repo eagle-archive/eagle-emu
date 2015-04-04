@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="external_libcrypto" />
+		<Option title="external_openssl_libcrypto" />
 		<Option pch_mode="2" />
 		<Option compiler="gnu_gcc_compiler__eagleemu" />
 		<Build>
 			<Target title="Debug">
-				<Option output="$(OUTBIN)libcrypto.dll" prefix_auto="0" extension_auto="0" />
+				<Option output="$(OUTBIN)libcrypto" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="$(OUTBIN)" />
 				<Option object_output="$(OUTOBJ)libcrypto" />
 				<Option type="3" />
@@ -17,7 +17,6 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="@libcrypto_options.txt" />
 			<Add directory="$(TOP_DIR)external\openssl" />
 			<Add directory="$(TOP_DIR)external\openssl\crypto" />
 			<Add directory="$(TOP_DIR)external\openssl\crypto\asn1" />
@@ -27,7 +26,7 @@
 			<Add directory="$(TOP_DIR)external\zlib" />
 		</Compiler>
 		<Unit filename="libcrypto_forceinc.h" />
-		<Unit filename="libcrypto_options.txt" />
+		<Unit filename="proj_options.txt" />
 		<Unit filename="..\..\overlay\external\openssl\crypto\dso\dso_win32.c">
 			<Option compilerVar="CC" />
 		</Unit>

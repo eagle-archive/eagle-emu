@@ -1,7 +1,7 @@
 #ifndef _DALVIK_COMMON_FORCEINC_H_
 #define _DALVIK_COMMON_FORCEINC_H_
 
-#include "projs\common\include\common_forceinc.h"
+#include "projs\emu\include\common_forceinc.h"
 
 // WITH_JIT is defined in phone build, but not portable to cygwin
 // #define WITH_JIT 1

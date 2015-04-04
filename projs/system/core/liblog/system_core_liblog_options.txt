@@ -1,0 +1,3 @@
+
+-Wno-unused-function -Wno-unused-variable
+-include liblog_forceinc.h

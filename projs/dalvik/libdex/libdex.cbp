@@ -7,7 +7,7 @@
 		<Option compiler="gnu_gcc_compiler__eagleemu" />
 		<Build>
 			<Target title="Debug">
-				<Option output="$(OUTBIN)libdex.a" prefix_auto="0" extension_auto="0" />
+				<Option output="lib$(OUTBIN)libdex" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="$(OUTOBJ)libdex" />
 				<Option type="2" />
@@ -15,9 +15,6 @@
 				<Option createDefFile="1" />
 			</Target>
 		</Build>
-		<Compiler>
-			<Add option="@options.txt" />
-		</Compiler>
 		<Linker>
 			<Add directory="$(OUTBIN)\" />
 		</Linker>
@@ -77,6 +74,8 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="..\..\..\..\dalvik\libdex\sha1.h" />
+		<Unit filename="dalvik_libdex_options.txt" />
+		<Unit filename="libdex_forceinc.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

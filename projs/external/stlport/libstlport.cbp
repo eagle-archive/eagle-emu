@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="external_libstlport" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler__eagleemu" />
+		<Build>
+			<Target title="Debug">
+				<Option output="$(OUTBIN)libstlport" prefix_auto="1" extension_auto="1" />
+				<Option object_output="$(OUTOBJ)libstlport" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler__eagleemu" />
+				<Option createDefFile="1" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="$(TOP_DIR)external\stlport\stlport" />
+		</Compiler>
+		<Unit filename="external_libstlport_options.txt" />
+		<Unit filename="libstlport_forceinc.h" />
+		<Unit filename="..\..\..\..\external\stlport\Android.mk" />
+		<Unit filename="..\..\..\..\external\stlport\libstlport.mk" />
+		<Unit filename="..\..\..\..\external\stlport\src\allocators.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\bitset.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\c_locale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\stlport\src\codecvt.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\collate.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\complex.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\complex_io.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\complex_trig.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\ctype.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\cxa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\stlport\src\dll_main.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\facets_byname.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\fstream.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\ios.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\iostream.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\istream.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\locale.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\locale_catalog.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\locale_impl.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\messages.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\monetary.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\num_get.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\num_get_float.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\num_put.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\num_put_float.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\numpunct.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\ostream.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\sincos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\external\stlport\src\sstream.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\stdio_streambuf.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\string.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\strstream.cpp" />
+		<Unit filename="..\..\..\..\external\stlport\src\time_facets.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

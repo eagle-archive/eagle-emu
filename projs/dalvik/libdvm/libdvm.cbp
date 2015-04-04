@@ -16,7 +16,6 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="@options.txt" />
 			<Add directory="$(EMU_DIR)projs\common\include\MinGW" />
 			<Add directory="$(TOP_DIR)system\core\include" />
 			<Add directory="$(TOP_DIR)frameworks\base\include" />
@@ -26,12 +25,12 @@
 			<Add directory="$(TOP_DIR)dalvik\libnativehelper\include\nativehelper" />
 		</Compiler>
 		<Linker>
-			<Add library="$(OUTBIN)\libdex.a" />
-			<Add library="$(PREBUILT)\libnativehelper.dll.a" />
-			<Add library="$(PREBUILT)\libcutils.dll.a" />
-			<Add library="$(PREBUILT)\liblog.dll.a" />
-			<Add library="$(PREBUILT)\libz.dll.a" />
-			<Add library="$(PREBUILT)\libffi.dll.a" />
+			<Add library="libdex.a" />
+			<Add library="libnativehelper.a" />
+			<Add library="libcutils.a" />
+			<Add library="liblog.a" />
+			<Add library="libz.a" />
+			<Add library="libffi.a" />
 			<Add directory="$(OUTBIN)\" />
 		</Linker>
 		<ExtraCommands>
@@ -461,12 +460,8 @@
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="forceinc.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="options.txt">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="dalvik_libdvm_options.txt" />
+		<Unit filename="libdvm_forceinc.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

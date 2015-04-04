@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="system_core_liblog" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler__eagleemu" />
+		<Build>
+			<Target title="Debug">
+				<Option output="$(OUTBIN)liblog" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="$(OUTBIN)" />
+				<Option object_output="$(OUTOBJ)liblog" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler__eagleemu" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="libemu.a" />
+		</Linker>
+		<Unit filename="liblog_forceinc.h" />
+		<Unit filename="system_core_liblog_options.txt" />
+		<Unit filename="..\..\..\..\..\system\core\liblog\Android.mk" />
+		<Unit filename="..\..\..\..\..\system\core\liblog\event_tag_map.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\..\system\core\liblog\fake_log_device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\..\system\core\liblog\logd_write.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\..\..\..\system\core\liblog\logprint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

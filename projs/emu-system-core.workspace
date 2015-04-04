@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="system core">
+		<Project filename="system/core/liblog/liblog.cbp" />
+		<Project filename="emu/libemu/libemu.cbp" active="1" />
+	</Workspace>
+</CodeBlocks_workspace_file>
